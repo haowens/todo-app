@@ -47,6 +47,7 @@ const App = () => {
    */
   const addTask = () => {
     const tasks = [...tasks, currTask];
+    console.log(tasks)
   };
 
   return (
