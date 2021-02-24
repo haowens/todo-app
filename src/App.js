@@ -47,7 +47,6 @@ const App = () => {
    */
   const addTask = () => {
     const tasks = [...tasks, currTask];
-    console.log(tasks);
   };
 
   return (
@@ -62,7 +61,6 @@ const App = () => {
              * 2. onChange (function) -> pass one of the functions above that handles the user's input
              */
              } 
-            <FormControl />
             <FormControl placeholder={"Enter a task!"} onChange={handleInput}/>
             <InputGroup.Append>
               {/** TODO: Add a prop & add some text to the button
@@ -75,8 +73,7 @@ const App = () => {
           </Form.Group>
         </Form>
         {/*using your tasks array, map through it and pass each task string to the Task component via the name prop*/}
-        {tasks.map((task) => {})}
-        {tasks.map((task) => {return Task(name);})}
+        {tasks.map((task) => {return Task(task);})}
       </div>
     </div>
   );
