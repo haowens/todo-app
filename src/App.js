@@ -76,7 +76,7 @@ const App = () => {
         </Form>
         {/*using your tasks array, map through it and pass each task string to the Task component via the name prop*/}
         {tasks.map((task) => {})}
-        {tasks.map((task) => {return Task(task);})}
+        {tasks.map((task) => {return Task(name);})}
       </div>
     </div>
   );
